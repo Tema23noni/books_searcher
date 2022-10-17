@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(56,68,76);
+ 
+  border: #697278;
+  color: #f0f2f3;
+
+}
+.app{
+  position: relative;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 20px 0 20px;
+}
+.logos{
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+.logo-text{
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  background: url('./img/books.png');
+}
+.search{
+  display: flex;
+  align-items: center;
+  
+}
+.search-input{
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  padding: 7px 10px;
+  font-size: 18px;
+  outline: none;
+}
+.search-btn{
+  margin: 0 20px;
+  padding: 5px 15px 5px 15px;
+  border: 2px solid #ffffff;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 20px;
+  background: none;
+
+}
+.search-btn:before{
+  content: '';
+  padding: 0 15px;
+  
+  filter: invert(1);
+
+  background: url('./img/icons8-поиск-24.png') no-repeat;
+}
+
+.search-btn:hover{
+  opacity: 0.8;
+
+}
+.BooksArray{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.BooksItem{
+  position: relative;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+  align-items: center; 
+  border: 1px solid rgb(0, 0, 0, 0.7);
+  width: 300px;
+  margin: 30px 10px;
+  height: 450px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  box-shadow: inset 1px 1px 6px  #000;
+ 
+}
+.BooksItem:hover{
+  box-shadow: inset 1px 1px 20px  #000;
+  cursor: pointer;
+}
+.imgBook{
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.8);
+  
+}
+.imgCenter{
+  display: flex;
+  justify-content: center;
+}
+.nodata{
+  margin: 0;
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+.namesAut{
+  border-top: 1px solid rgb(0, 0, 0);
+  
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: 10px 0 0 0;
+}
+.nameBook{
+
+  position: relative;
+  padding: 10px 0;
+}
+.about{
+  position: absolute;
+  
+  background: none;
+  border: 2px solid rgb(0, 0, 0);
+  color: black;
+  padding: 10px 20px;
+  top:90%
+}
+.about:hover{
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
